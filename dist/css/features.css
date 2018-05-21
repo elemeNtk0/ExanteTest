@@ -144,9 +144,38 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 50px;
 }
 
-/* line 104, src/sass/components/features.scss */
+/* line 109, src/sass/components/features.scss */
+.features__slider-btn {
+  width: 15px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bg_slider-button.png");
+}
+
+/* line 116, src/sass/components/features.scss */
+.features__slider-btn_next {
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+}
+
+/* line 120, src/sass/components/features.scss */
+.features__slider-btn_is-disabled {
+  opacity: 0.5;
+}
+
+/* line 125, src/sass/components/features.scss */
 .features__slide {
   width: 100%;
   -ms-flex-negative: 0;
@@ -160,7 +189,7 @@
 }
 
 @media (min-width: 960px) {
-  /* line 104, src/sass/components/features.scss */
+  /* line 125, src/sass/components/features.scss */
   .features__slide {
     width: 60%;
     -ms-flex-preferred-size: 60%;
@@ -168,17 +197,17 @@
   }
 }
 
-/* line 117, src/sass/components/features.scss */
+/* line 138, src/sass/components/features.scss */
 .features__slide_is-visible {
   opacity: 1;
 }
 
-/* line 121, src/sass/components/features.scss */
+/* line 142, src/sass/components/features.scss */
 .features__slide + .features__slide {
   margin-left: 125px;
 }
 
-/* line 127, src/sass/components/features.scss */
+/* line 150, src/sass/components/features.scss */
 .features__item + .features__item {
   margin-top: 30px;
 }

@@ -99,6 +99,27 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 50px;
+  }
+
+  &__slider-btn {
+    width: 15px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/bg_slider-button.png");
+
+    &_next {
+      transform: rotate(180deg);
+    }
+
+    &_is-disabled {
+      opacity: 0.5;
+    }
   }
 
   &__slide {
@@ -122,6 +143,8 @@
       margin-left: 125px;
     }
   }
+
+  
 
   &__item {
     & + & {
