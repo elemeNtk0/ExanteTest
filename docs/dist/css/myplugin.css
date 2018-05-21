@@ -492,7 +492,7 @@ body {
       flex-wrap: nowrap;
   -ms-flex-align: center;
       align-items: center;
-  padding: 20vh 40px 30px;
+  padding: 10vh 40px 7vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1900px) {
@@ -505,7 +505,7 @@ body {
 @media (min-width: 960px) {
   /* line 1, src/sass/components/main-section.scss */
   .main-section {
-    padding: 18vh 80px 10vh;
+    padding: 10vh 80px 12vh;
   }
 }
 
@@ -540,18 +540,20 @@ body {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-/* line 47, src/sass/components/main-section.scss */
+/* line 48, src/sass/components/main-section.scss */
 .main-section__logo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
 }
 
-/* line 53, src/sass/components/main-section.scss */
+/* line 54, src/sass/components/main-section.scss */
 .main-section__title {
-  font-size: 36px;
+  font-size: 22px;
   line-height: 1.3;
   color: #4e5d60;
   font-weight: 400;
@@ -559,7 +561,14 @@ body {
   margin: 0 0 40px;
 }
 
-/* line 62, src/sass/components/main-section.scss */
+@media (min-width: 960px) {
+  /* line 54, src/sass/components/main-section.scss */
+  .main-section__title {
+    font-size: 36px;
+  }
+}
+
+/* line 67, src/sass/components/main-section.scss */
 .main-section__subtitle {
   font-size: 24px;
   line-height: 1.2;
@@ -570,24 +579,25 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 62, src/sass/components/main-section.scss */
+  /* line 67, src/sass/components/main-section.scss */
   .main-section__subtitle {
     display: block;
     max-width: 500px;
   }
 }
 
-/* line 76, src/sass/components/main-section.scss */
+/* line 81, src/sass/components/main-section.scss */
 .main-section__button {
   position: absolute;
-  bottom: 0;
+  bottom: -21px;
   left: 50%;
   margin-left: -14px;
 }
 
 @media (min-width: 960px) {
-  /* line 76, src/sass/components/main-section.scss */
+  /* line 81, src/sass/components/main-section.scss */
   .main-section__button {
     margin-left: -32px;
+    bottom: -64px;
   }
 }
