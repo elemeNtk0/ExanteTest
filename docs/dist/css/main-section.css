@@ -1,0 +1,87 @@
+/*!
+ * test_for_exante v1.0.0: My Test Project for Exante
+ * (c) 2018 
+ * MIT License
+ * 
+ */
+
+/* line 1, src/sass/components/main-section.scss */
+.main-section {
+  min-height: 100vh;
+  background-image: url("../img/bg_promo-section.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10vh 40px 30px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1900px) {
+  /* line 1, src/sass/components/main-section.scss */
+  .main-section {
+    background-image: url("../img/bg_promo-section_retina.png");
+  }
+}
+
+@media (min-width: 960px) {
+  /* line 1, src/sass/components/main-section.scss */
+  .main-section {
+    padding: 15vh 80px 10vh;
+  }
+}
+
+/* line 22, src/sass/components/main-section.scss */
+.menu-is-open .main-section {
+  will-change: padding;
+  transition: padding-left 0.25s ease-in-out;
+}
+
+@media (min-width: 960px) {
+  /* line 22, src/sass/components/main-section.scss */
+  .menu-is-open .main-section {
+    padding-left: 380px;
+  }
+}
+
+/* line 31, src/sass/components/main-section.scss */
+.main-section__inner {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  width: 100%;
+}
+
+/* line 47, src/sass/components/main-section.scss */
+.main-section__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -14px;
+}
+
+@media (min-width: 960px) {
+  /* line 53, src/sass/components/main-section.scss */
+  .menu-is-open .main-section__button {
+    margin-left: -32px;
+  }
+}

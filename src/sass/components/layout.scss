@@ -1,15 +1,12 @@
 .main-wrapper {
   min-height: 100vh;
   width: 100%;
+  min-width: 320px;
 
-  .menu-is-open & {
-    will-change: padding;
-    transition: padding-left 0.25s ease-in-out;
-
-    @media (min-width: 960px) {
-      padding-left: 300px;
-    }
-  }
+  // .menu-is-open & {
+  //   will-change: padding;
+  //   transition: padding-left 0.25s ease-in-out;
+  // }
 }
 
 .layout  {}

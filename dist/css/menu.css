@@ -10,6 +10,7 @@
   background-color: #345972;
   padding: 40px 0;
   position: fixed;
+  z-index: 100;
   top: 0;
   bottom: 0;
   left: 0;
@@ -20,13 +21,13 @@
   transition: transform 0.25s ease-in-out;
 }
 
-/* line 13, src/sass/components/menu.scss */
+/* line 14, src/sass/components/menu.scss */
 .menu-is-open .menu {
   -ms-transform: translateX(0);
       transform: translateX(0);
 }
 
-/* line 17, src/sass/components/menu.scss */
+/* line 18, src/sass/components/menu.scss */
 .menu__toggle {
   will-change: transform;
   transition: transform 0.25s ease-in-out;
@@ -34,18 +35,18 @@
       transform: translateX(110px);
 }
 
-/* line 22, src/sass/components/menu.scss */
+/* line 23, src/sass/components/menu.scss */
 .menu-is-open .menu__toggle {
   -ms-transform: translateX(0);
       transform: translateX(0);
 }
 
-/* line 27, src/sass/components/menu.scss */
+/* line 28, src/sass/components/menu.scss */
 .menu__list {
   margin-left: 40px;
 }
 
-/* line 31, src/sass/components/menu.scss */
+/* line 32, src/sass/components/menu.scss */
 .menu__actions {
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +64,7 @@
   margin-bottom: 35px;
 }
 
-/* line 43, src/sass/components/menu.scss */
+/* line 44, src/sass/components/menu.scss */
 .menu__logo {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -73,7 +74,7 @@
       flex-basis: 118.5px;
 }
 
-/* line 48, src/sass/components/menu.scss */
+/* line 49, src/sass/components/menu.scss */
 .menu__logo img {
   -ms-flex-negative: 0;
       flex-shrink: 0;

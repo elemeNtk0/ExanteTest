@@ -59,3 +59,34 @@
 .button_menu-light {
   color: #fff;
 }
+
+/* line 50, src/sass/components/button.scss */
+.button_anchor {
+  display: block;
+  width: 28px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/bg_button-scroll_mobile.png");
+  animation: shake-button 1s infinite alternate ease-in-out;
+}
+
+@media (min-width: 960px) {
+  /* line 50, src/sass/components/button.scss */
+  .button_anchor {
+    width: 64px;
+    height: 64px;
+    background-size: 100%;
+    background-image: url("../img/bg_button-scroll.png");
+  }
+}
+
+@keyframes shake-button {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25%);
+  }
+}

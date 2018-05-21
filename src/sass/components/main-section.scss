@@ -1,0 +1,59 @@
+.main-section {
+  min-height: 100vh;
+  background-image: url("../img/bg_promo-section.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10vh 40px 30px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1900px) {
+    background-image: url("../img/bg_promo-section_retina.png");
+  }
+
+  @media (min-width: 960px) {
+    padding: 15vh 80px 10vh;
+  }
+
+  .menu-is-open & {
+    will-change: padding;
+    transition: padding-left 0.25s ease-in-out;
+
+    @media (min-width: 960px) {
+      padding-left: 380px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 100%;
+
+    @media (min-width: 480px) {}
+
+    @media (min-width: 960px) {}
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -14px;
+
+    .menu-is-open & {
+      @media (min-width: 960px) {
+        margin-left: -32px;
+      }
+    }
+  }
+}
