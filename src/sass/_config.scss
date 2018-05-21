@@ -13,6 +13,24 @@
   overflow: hidden;
 }
 
+.mobile-hide {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: inline;
+  }
+}
+
+.desktop-hide {
+  display: inline;
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+
+
 // change box-sizing model
 html {
   box-sizing: border-box;

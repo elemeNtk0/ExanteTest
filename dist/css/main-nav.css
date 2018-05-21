@@ -23,19 +23,20 @@
   padding: 10px 20px 10px 0;
   text-decoration: none;
   position: relative;
+  font-weight: 600;
 }
 
-/* line 16, src/sass/components/main-nav.scss */
+/* line 17, src/sass/components/main-nav.scss */
 .main-nav__item:hover {
-  text-decoration: underline;
+  color: #00c8ff;
 }
 
-/* line 20, src/sass/components/main-nav.scss */
+/* line 21, src/sass/components/main-nav.scss */
 .main-nav__item_is-active {
   color: #00c8ff;
 }
 
-/* line 23, src/sass/components/main-nav.scss */
+/* line 24, src/sass/components/main-nav.scss */
 .main-nav__item_is-active::after {
   content: "";
   border-radius: 50%;
