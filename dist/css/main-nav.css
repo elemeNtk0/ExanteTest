@@ -1,0 +1,51 @@
+/*!
+ * test_for_exante v1.0.0: My Test Project for Exante
+ * (c) 2018 
+ * MIT License
+ * 
+ */
+
+/* line 1, src/sass/components/main-nav.scss */
+.main-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #fff;
+}
+
+/* line 7, src/sass/components/main-nav.scss */
+.main-nav__item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 0;
+  text-decoration: none;
+  position: relative;
+}
+
+/* line 16, src/sass/components/main-nav.scss */
+.main-nav__item:hover {
+  text-decoration: underline;
+}
+
+/* line 20, src/sass/components/main-nav.scss */
+.main-nav__item_is-active {
+  color: #00c8ff;
+}
+
+/* line 23, src/sass/components/main-nav.scss */
+.main-nav__item_is-active::after {
+  content: "";
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #00C8FF;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}

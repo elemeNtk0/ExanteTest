@@ -192,6 +192,11 @@ img {
   height: auto;
 }
 
+/* line 34, src/sass/_config.scss */
+body {
+  font-family: "EX 2", Helvetica, Arial, sans-serif;
+}
+
 /* line 1, src/sass/components/animations.scss */
 .animated {
   animation-duration: 1.5s;
@@ -227,4 +232,201 @@ img {
 .fadeIn {
   will-change: opacity;
   animation-name: fadeIn;
+}
+
+/* line 1, src/sass/components/layout.scss */
+.main-wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* line 5, src/sass/components/layout.scss */
+.menu-is-open .main-wrapper {
+  will-change: padding;
+  transition: padding-left 0.25s ease-in-out;
+}
+
+@media (min-width: 960px) {
+  /* line 5, src/sass/components/layout.scss */
+  .menu-is-open .main-wrapper {
+    padding-left: 300px;
+  }
+}
+
+/* line 1, src/sass/components/menu.scss */
+.menu {
+  background-color: #345972;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  will-change: transform;
+  -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+/* line 13, src/sass/components/menu.scss */
+.menu-is-open .menu {
+  -ms-transform: translateX(0);
+      transform: translateX(0);
+}
+
+/* line 17, src/sass/components/menu.scss */
+.menu__toggle {
+  will-change: transform;
+  transition: transform 0.25s ease-in-out;
+  -ms-transform: translateX(110px);
+      transform: translateX(110px);
+}
+
+/* line 22, src/sass/components/menu.scss */
+.menu-is-open .menu__toggle {
+  -ms-transform: translateX(0);
+      transform: translateX(0);
+}
+
+/* line 27, src/sass/components/menu.scss */
+.menu__list {
+  margin-left: 40px;
+}
+
+/* line 31, src/sass/components/menu.scss */
+.menu__actions {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 35px;
+}
+
+/* line 43, src/sass/components/menu.scss */
+.menu__logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  -ms-flex-preferred-size: 118.5px;
+      flex-basis: 118.5px;
+}
+
+/* line 48, src/sass/components/menu.scss */
+.menu__logo img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+/* line 1, src/sass/components/main-nav.scss */
+.main-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #fff;
+}
+
+/* line 7, src/sass/components/main-nav.scss */
+.main-nav__item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 0;
+  text-decoration: none;
+  position: relative;
+}
+
+/* line 16, src/sass/components/main-nav.scss */
+.main-nav__item:hover {
+  text-decoration: underline;
+}
+
+/* line 20, src/sass/components/main-nav.scss */
+.main-nav__item_is-active {
+  color: #00c8ff;
+}
+
+/* line 23, src/sass/components/main-nav.scss */
+.main-nav__item_is-active::after {
+  content: "";
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #00C8FF;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+/* line 1, src/sass/components/button.scss */
+.button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  vertical-align: baseline;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* line 17, src/sass/components/button.scss */
+.button::-moz-focus-inner {
+  border: none;
+}
+
+/* line 21, src/sass/components/button.scss */
+.button_menu {
+  width: 20px;
+  height: 20px;
+  color: #345972;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.25s ease-in-out;
+}
+
+/* line 33, src/sass/components/button.scss */
+.button_menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: currentColor;
+  width: 50%;
+  height: 2px;
+  top: 50%;
+  right: 0;
+  margin-top: -1px;
+}
+
+/* line 46, src/sass/components/button.scss */
+.button_menu-light {
+  color: #fff;
 }

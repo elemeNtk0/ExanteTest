@@ -5,3 +5,21 @@
  * 
  */
 
+/* line 1, src/sass/components/layout.scss */
+.main-wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* line 5, src/sass/components/layout.scss */
+.menu-is-open .main-wrapper {
+  will-change: padding;
+  transition: padding-left 0.25s ease-in-out;
+}
+
+@media (min-width: 960px) {
+  /* line 5, src/sass/components/layout.scss */
+  .menu-is-open .main-wrapper {
+    padding-left: 300px;
+  }
+}

@@ -10,8 +10,32 @@
     <!-- <link href="dist/css/myplugin.min.css" type="text/css" rel="stylesheet"> -->
   </head>
 
-  <body>
+  <body class="menu-is-open">
 
+    <div class="main-wrapper">
+      <div class="menu">
+        
+        <div class="menu__actions">
+          <a class="menu__logo" href="/">
+            <span class="visually-hidden">Go to Stasis Main Page</span>
+            <img src="../dist/img/logo.svg" alt="Stasis" width="118.5" height="32">
+          </a>
+          <button class="menu__toggle button button_menu button_menu-light js_buttonMainNav" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
+
+        <nav class="menu__list main-nav">
+          <a class="main-nav__item" href="/">how it works</a>
+          <a class="main-nav__item" href="/">government relations</a>
+          <a class="main-nav__item" href="/">stasis tokens</a>
+          <a class="main-nav__item main-nav__item_is-active" href="/">innovations and traditions</a>
+          <a class="main-nav__item" href="/">contact</a>
+        </nav>
+      </div>
+    </div>
+
+    
     <script src="dist/js/myplugin.js"></script>
   </body>
 </html>

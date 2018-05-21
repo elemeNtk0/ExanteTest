@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+
+  &__item {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 0;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_is-active {
+      color: #00c8ff;
+
+      &::after {
+        content: "";
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        // ios 8+ safari bug with currentColor :(
+        // background-color: currentColor;
+        // https://stackoverflow.com/questions/29400291/currentcolor-seems-to-get-stuck-in-safari
+        background-color: #00C8FF;
+        border: 3px solid #fff;
+        position: absolute;
+        top: 50%;
+        right: -8px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
