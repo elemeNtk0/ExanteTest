@@ -218,7 +218,7 @@ img {
 
 /* line 52, src/sass/_config.scss */
 body {
-  font-family: "EX 2", Helvetica, Arial, sans-serif;
+  font-family: "Exo 2", Helvetica, Arial, sans-serif;
 }
 
 /* line 1, src/sass/components/animations.scss */
@@ -606,26 +606,176 @@ body {
 .features {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   min-height: 100vh;
-  padding: 10vh 40px 7vh;
+  padding: 10vh 0 10vh 40px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media (min-width: 960px) {
   /* line 1, src/sass/components/features.scss */
   .features {
-    padding: 10vh 80px 12vh;
+    padding-left: 80px;
   }
 }
 
-/* line 10, src/sass/components/features.scss */
+/* line 13, src/sass/components/features.scss */
 .menu-is-open .features {
   will-change: padding;
   transition: padding-left 0.25s ease-in-out;
 }
 
 @media (min-width: 960px) {
-  /* line 10, src/sass/components/features.scss */
+  /* line 13, src/sass/components/features.scss */
   .menu-is-open .features {
     padding-left: 380px;
   }
+}
+
+/* line 22, src/sass/components/features.scss */
+.features__title {
+  font-size: 22px;
+  line-height: 1.25;
+  color: #345972;
+  font-weight: 400;
+  margin: 0 0 25px;
+  max-width: 910px;
+  padding-right: 40px;
+}
+
+@media (min-width: 960px) {
+  /* line 22, src/sass/components/features.scss */
+  .features__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 37, src/sass/components/features.scss */
+.features__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  color: #4e5d60;
+  font-weight: 300;
+  max-width: 910px;
+  padding-right: 40px;
+}
+
+@media (min-width: 960px) {
+  /* line 37, src/sass/components/features.scss */
+  .features__text {
+    font-size: 18px;
+  }
+}
+
+/* line 51, src/sass/components/features.scss */
+.features__slider {
+  margin-top: 100px;
+}
+
+/* line 55, src/sass/components/features.scss */
+.features__item-title {
+  font-size: 16px;
+  line-height: 1;
+  color: #4e5d60;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  /* line 55, src/sass/components/features.scss */
+  .features__item-title {
+    font-size: 24px;
+    line-height: 1.13;
+    margin-bottom: 25px;
+  }
+}
+
+/* line 69, src/sass/components/features.scss */
+.features__item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #4e5d60;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (min-width: 960px) {
+  /* line 69, src/sass/components/features.scss */
+  .features__item-text {
+    font-size: 18px;
+  }
+}
+
+/* line 82, src/sass/components/features.scss */
+.features__slider {
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-right: 40px;
+}
+
+@media (min-width: 960px) {
+  /* line 82, src/sass/components/features.scss */
+  .features__slider {
+    padding-left: 50px;
+    margin-left: -50px;
+    padding-right: 0;
+  }
+}
+
+/* line 98, src/sass/components/features.scss */
+.features__slider-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 104, src/sass/components/features.scss */
+.features__slide {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  will-change: opacity;
+  opacity: 0.5;
+}
+
+@media (min-width: 960px) {
+  /* line 104, src/sass/components/features.scss */
+  .features__slide {
+    width: 60%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+/* line 117, src/sass/components/features.scss */
+.features__slide_is-visible {
+  opacity: 1;
+}
+
+/* line 121, src/sass/components/features.scss */
+.features__slide + .features__slide {
+  margin-left: 125px;
+}
+
+/* line 127, src/sass/components/features.scss */
+.features__item + .features__item {
+  margin-top: 30px;
 }
