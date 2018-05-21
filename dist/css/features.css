@@ -5,3 +5,30 @@
  * 
  */
 
+/* line 1, src/sass/components/features.scss */
+.features {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding: 10vh 40px 7vh;
+}
+
+@media (min-width: 960px) {
+  /* line 1, src/sass/components/features.scss */
+  .features {
+    padding: 10vh 80px 12vh;
+  }
+}
+
+/* line 10, src/sass/components/features.scss */
+.menu-is-open .features {
+  will-change: padding;
+  transition: padding-left 0.25s ease-in-out;
+}
+
+@media (min-width: 960px) {
+  /* line 10, src/sass/components/features.scss */
+  .menu-is-open .features {
+    padding-left: 380px;
+  }
+}

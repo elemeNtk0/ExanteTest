@@ -1,1 +1,2 @@
 /*! test_for_exante v1.0.0 | (c) 2018  | MIT License |  */
+.features{display:-ms-flexbox;display:flex;min-height:100vh;padding:10vh 40px 7vh}@media (min-width:960px){.features{padding:10vh 80px 12vh}}.menu-is-open .features{will-change:padding;transition:padding-left .25s ease-in-out}@media (min-width:960px){.menu-is-open .features{padding-left:380px}}
