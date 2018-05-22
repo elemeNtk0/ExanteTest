@@ -507,6 +507,7 @@ body {
       flex-wrap: nowrap;
   -ms-flex-align: center;
       align-items: center;
+  transition: padding 0.25s ease-in-out;
   padding: 10vh 40px 7vh;
 }
 
@@ -524,20 +525,20 @@ body {
   }
 }
 
-/* line 22, src/sass/components/main-section.scss */
+/* line 23, src/sass/components/main-section.scss */
 .menu-is-open .main-section {
   will-change: padding;
   transition: padding-left 0.25s ease-in-out;
 }
 
 @media (min-width: 960px) {
-  /* line 22, src/sass/components/main-section.scss */
+  /* line 23, src/sass/components/main-section.scss */
   .menu-is-open .main-section {
     padding-left: 380px;
   }
 }
 
-/* line 31, src/sass/components/main-section.scss */
+/* line 32, src/sass/components/main-section.scss */
 .main-section__inner {
   position: relative;
   display: -ms-flexbox;
@@ -557,14 +558,14 @@ body {
   width: 100%;
 }
 
-/* line 43, src/sass/components/main-section.scss */
+/* line 44, src/sass/components/main-section.scss */
 .main-section__logo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
 }
 
-/* line 49, src/sass/components/main-section.scss */
+/* line 50, src/sass/components/main-section.scss */
 .main-section__title {
   font-size: 22px;
   line-height: 1.3;
@@ -575,13 +576,13 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 49, src/sass/components/main-section.scss */
+  /* line 50, src/sass/components/main-section.scss */
   .main-section__title {
     font-size: 36px;
   }
 }
 
-/* line 62, src/sass/components/main-section.scss */
+/* line 63, src/sass/components/main-section.scss */
 .main-section__subtitle {
   font-size: 24px;
   line-height: 1.2;
@@ -592,27 +593,27 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 62, src/sass/components/main-section.scss */
+  /* line 63, src/sass/components/main-section.scss */
   .main-section__subtitle {
     display: block;
     max-width: 500px;
   }
 }
 
-/* line 76, src/sass/components/main-section.scss */
+/* line 77, src/sass/components/main-section.scss */
 .main-section__button-area {
   position: absolute;
   bottom: 50px;
 }
 
 @media (min-width: 960px) {
-  /* line 76, src/sass/components/main-section.scss */
+  /* line 77, src/sass/components/main-section.scss */
   .main-section__button-area {
     bottom: 100px;
   }
 }
 
-/* line 85, src/sass/components/main-section.scss */
+/* line 86, src/sass/components/main-section.scss */
 .main-section__button {
   position: absolute;
   bottom: -21px;
@@ -621,7 +622,7 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 85, src/sass/components/main-section.scss */
+  /* line 86, src/sass/components/main-section.scss */
   .main-section__button {
     margin-left: -32px;
     bottom: -64px;
@@ -637,6 +638,7 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   min-height: 100vh;
+  transition: padding 0.25s ease-in-out;
   padding: 10vh 0 10vh 40px;
   -ms-flex-pack: center;
       justify-content: center;
@@ -649,20 +651,20 @@ body {
   }
 }
 
-/* line 13, src/sass/components/features.scss */
+/* line 14, src/sass/components/features.scss */
 .menu-is-open .features {
   will-change: padding;
   transition: padding-left 0.25s ease-in-out;
 }
 
 @media (min-width: 960px) {
-  /* line 13, src/sass/components/features.scss */
+  /* line 14, src/sass/components/features.scss */
   .menu-is-open .features {
     padding-left: 380px;
   }
 }
 
-/* line 22, src/sass/components/features.scss */
+/* line 23, src/sass/components/features.scss */
 .features__title {
   font-size: 22px;
   line-height: 1.25;
@@ -674,14 +676,14 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 22, src/sass/components/features.scss */
+  /* line 23, src/sass/components/features.scss */
   .features__title {
     font-size: 36px;
     margin-bottom: 30px;
   }
 }
 
-/* line 37, src/sass/components/features.scss */
+/* line 38, src/sass/components/features.scss */
 .features__text {
   font-size: 16px;
   line-height: 1.5;
@@ -693,18 +695,18 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 37, src/sass/components/features.scss */
+  /* line 38, src/sass/components/features.scss */
   .features__text {
     font-size: 18px;
   }
 }
 
-/* line 51, src/sass/components/features.scss */
+/* line 52, src/sass/components/features.scss */
 .features__slider {
   margin-top: 100px;
 }
 
-/* line 55, src/sass/components/features.scss */
+/* line 56, src/sass/components/features.scss */
 .features__item-title {
   font-size: 16px;
   line-height: 1;
@@ -713,13 +715,13 @@ body {
   font-weight: 400;
 }
 
-/* line 62, src/sass/components/features.scss */
+/* line 63, src/sass/components/features.scss */
 .features__item-title img {
   display: none;
 }
 
 @media (min-width: 960px) {
-  /* line 55, src/sass/components/features.scss */
+  /* line 56, src/sass/components/features.scss */
   .features__item-title {
     font-size: 24px;
     line-height: 1.13;
@@ -733,7 +735,7 @@ body {
     -ms-flex-align: center;
         align-items: center;
   }
-  /* line 75, src/sass/components/features.scss */
+  /* line 76, src/sass/components/features.scss */
   .features__item-title img {
     display: -ms-flexbox;
     display: flex;
@@ -749,7 +751,7 @@ body {
   }
 }
 
-/* line 87, src/sass/components/features.scss */
+/* line 88, src/sass/components/features.scss */
 .features__item-text {
   font-size: 16px;
   line-height: 1.5;
@@ -760,13 +762,13 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 87, src/sass/components/features.scss */
+  /* line 88, src/sass/components/features.scss */
   .features__item-text {
     font-size: 18px;
   }
 }
 
-/* line 100, src/sass/components/features.scss */
+/* line 101, src/sass/components/features.scss */
 .features__slider {
   position: relative;
   padding-top: 50px;
@@ -781,7 +783,7 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 100, src/sass/components/features.scss */
+  /* line 101, src/sass/components/features.scss */
   .features__slider {
     padding-left: 50px;
     margin-left: -50px;
@@ -789,7 +791,7 @@ body {
   }
 }
 
-/* line 116, src/sass/components/features.scss */
+/* line 117, src/sass/components/features.scss */
 .features__slider-controls {
   position: absolute;
   top: 0;
@@ -805,7 +807,7 @@ body {
   width: 50px;
 }
 
-/* line 127, src/sass/components/features.scss */
+/* line 128, src/sass/components/features.scss */
 .features__slider-btn {
   width: 15px;
   height: 20px;
@@ -814,18 +816,18 @@ body {
   background-image: url("../img/bg_slider-button.png");
 }
 
-/* line 134, src/sass/components/features.scss */
+/* line 135, src/sass/components/features.scss */
 .features__slider-btn_next {
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
 }
 
-/* line 138, src/sass/components/features.scss */
+/* line 139, src/sass/components/features.scss */
 .features__slider-btn_is-disabled {
   opacity: 0.5;
 }
 
-/* line 143, src/sass/components/features.scss */
+/* line 144, src/sass/components/features.scss */
 .features__slide {
   width: 100%;
   -ms-flex-negative: 0;
@@ -839,7 +841,7 @@ body {
 }
 
 @media (min-width: 960px) {
-  /* line 143, src/sass/components/features.scss */
+  /* line 144, src/sass/components/features.scss */
   .features__slide {
     width: 60%;
     -ms-flex-preferred-size: 60%;
@@ -847,17 +849,17 @@ body {
   }
 }
 
-/* line 156, src/sass/components/features.scss */
+/* line 157, src/sass/components/features.scss */
 .features__slide_is-visible {
   opacity: 1;
 }
 
-/* line 160, src/sass/components/features.scss */
+/* line 161, src/sass/components/features.scss */
 .features__slide + .features__slide {
   margin-left: 125px;
 }
 
-/* line 168, src/sass/components/features.scss */
+/* line 169, src/sass/components/features.scss */
 .features__item + .features__item {
   margin-top: 30px;
 }
