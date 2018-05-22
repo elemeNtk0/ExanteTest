@@ -268,7 +268,7 @@ body {
 /* line 1, src/sass/components/menu.scss */
 .menu {
   background-color: #345972;
-  padding: 40px 0;
+  padding: 20px 0;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -281,32 +281,47 @@ body {
   transition: transform 0.25s ease-in-out;
 }
 
-/* line 14, src/sass/components/menu.scss */
+@media (min-width: 960px) {
+  /* line 1, src/sass/components/menu.scss */
+  .menu {
+    padding: 40px 0;
+  }
+}
+
+/* line 18, src/sass/components/menu.scss */
 .menu-is-open .menu {
   -ms-transform: translateX(0);
       transform: translateX(0);
 }
 
-/* line 18, src/sass/components/menu.scss */
+/* line 22, src/sass/components/menu.scss */
 .menu__toggle {
   will-change: transform;
   transition: transform 0.25s ease-in-out;
-  -ms-transform: translateX(110px);
-      transform: translateX(110px);
+  -ms-transform: translateX(80px);
+      transform: translateX(80px);
 }
 
-/* line 23, src/sass/components/menu.scss */
+@media (min-width: 960px) {
+  /* line 22, src/sass/components/menu.scss */
+  .menu__toggle {
+    -ms-transform: translateX(110px);
+        transform: translateX(110px);
+  }
+}
+
+/* line 31, src/sass/components/menu.scss */
 .menu-is-open .menu__toggle {
   -ms-transform: translateX(0);
       transform: translateX(0);
 }
 
-/* line 28, src/sass/components/menu.scss */
+/* line 36, src/sass/components/menu.scss */
 .menu__list {
   margin-left: 40px;
 }
 
-/* line 32, src/sass/components/menu.scss */
+/* line 40, src/sass/components/menu.scss */
 .menu__actions {
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +339,7 @@ body {
   margin-bottom: 35px;
 }
 
-/* line 44, src/sass/components/menu.scss */
+/* line 52, src/sass/components/menu.scss */
 .menu__logo {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -334,7 +349,7 @@ body {
       flex-basis: 118.5px;
 }
 
-/* line 49, src/sass/components/menu.scss */
+/* line 57, src/sass/components/menu.scss */
 .menu__logo img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -492,7 +507,7 @@ body {
       flex-wrap: nowrap;
   -ms-flex-align: center;
       align-items: center;
-  padding: 22vh 40px 7vh;
+  padding: 10vh 40px 7vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1900px) {

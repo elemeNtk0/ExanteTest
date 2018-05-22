@@ -50,7 +50,14 @@ function ready() {
     }
 
     // Мой код начинается здесь
-    
+    var body = document.querySelector("body");
+    var menuToggle = document.querySelector(".js_buttonMainNav");
+
+    menuToggle.addEventListener("click", function(e) {
+      e.preventDefault();
+      this.classList.toggle("button_menu-light");
+      body.classList.toggle("menu-is-open");
+    });
 
   })();
 }
