@@ -21,7 +21,7 @@
       flex-wrap: nowrap;
   -ms-flex-align: center;
       align-items: center;
-  padding: 10vh 40px 7vh;
+  padding: 22vh 40px 7vh;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1900px) {
@@ -34,7 +34,7 @@
 @media (min-width: 960px) {
   /* line 1, src/sass/components/main-section.scss */
   .main-section {
-    padding: 10vh 80px 12vh;
+    padding: 20vh 80px 12vh;
   }
 }
 
@@ -69,18 +69,16 @@
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   width: 100%;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
-/* line 44, src/sass/components/main-section.scss */
+/* line 43, src/sass/components/main-section.scss */
 .main-section__logo {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
 }
 
-/* line 50, src/sass/components/main-section.scss */
+/* line 49, src/sass/components/main-section.scss */
 .main-section__title {
   font-size: 22px;
   line-height: 1.3;
@@ -91,13 +89,13 @@
 }
 
 @media (min-width: 960px) {
-  /* line 50, src/sass/components/main-section.scss */
+  /* line 49, src/sass/components/main-section.scss */
   .main-section__title {
     font-size: 36px;
   }
 }
 
-/* line 63, src/sass/components/main-section.scss */
+/* line 62, src/sass/components/main-section.scss */
 .main-section__subtitle {
   font-size: 24px;
   line-height: 1.2;
@@ -108,14 +106,27 @@
 }
 
 @media (min-width: 960px) {
-  /* line 63, src/sass/components/main-section.scss */
+  /* line 62, src/sass/components/main-section.scss */
   .main-section__subtitle {
     display: block;
     max-width: 500px;
   }
 }
 
-/* line 77, src/sass/components/main-section.scss */
+/* line 76, src/sass/components/main-section.scss */
+.main-section__button-area {
+  position: absolute;
+  bottom: 50px;
+}
+
+@media (min-width: 960px) {
+  /* line 76, src/sass/components/main-section.scss */
+  .main-section__button-area {
+    bottom: 100px;
+  }
+}
+
+/* line 85, src/sass/components/main-section.scss */
 .main-section__button {
   position: absolute;
   bottom: -21px;
@@ -124,7 +135,7 @@
 }
 
 @media (min-width: 960px) {
-  /* line 77, src/sass/components/main-section.scss */
+  /* line 85, src/sass/components/main-section.scss */
   .main-section__button {
     margin-left: -32px;
     bottom: -64px;

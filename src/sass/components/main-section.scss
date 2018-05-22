@@ -9,14 +9,14 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 10vh 40px 7vh;
+  padding: 22vh 40px 7vh;
   
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1900px) {
     background-image: url("../img/bg_promo-section_retina.png");
   }
   
   @media (min-width: 960px) {
-    padding: 10vh 80px 12vh;
+    padding: 20vh 80px 12vh;
   }
   
   .menu-is-open & {
@@ -38,7 +38,6 @@
     flex-grow: 1;
     flex-basis: auto;
     width: 100%;
-    justify-content: center;
   }
 
   &__logo {
@@ -71,6 +70,15 @@
     @media (min-width: 960px) {
       display: block;
       max-width: 500px;
+    }
+  }
+
+  &__button-area {
+    position: absolute;
+    bottom: 50px;
+
+    @media (min-width: 960px) {
+      bottom: 100px;
     }
   }
 
